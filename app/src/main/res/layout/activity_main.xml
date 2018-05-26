@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slmns.tweenanimation.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tween"
+        android:id="@+id/Tweentv"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:id="@+id/Animationtv"
+        android:textSize="35dp"
+        android:layout_below="@+id/Tweentv"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/animation_icon"
+        android:layout_below="@+id/Animationtv"
+        android:layout_alignRight="@id/Animationtv"
+        android:layout_alignEnd="@+id/Animationtv"
+        android:layout_alignLeft="@+id/Tweentv"
+        android:layout_alignStart="@id/Tweentv"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zoom"
+        android:id="@+id/Zoombtn"
+        android:layout_below="@+id/image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:onClick="Zoom"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clockwise"
+        android:id="@+id/Clockwisebtn"
+        android:layout_alignTop="@+id/Zoombtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="Clockwise"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade"
+        android:id="@+id/Fadebtn"
+        android:layout_alignTop="@+id/Clockwisebtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Fade"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blink"
+        android:onClick="Blink"
+        android:id="@+id/Blinktn"
+        android:layout_below="@+id/Zoombtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move"
+        android:onClick="Move"
+        android:id="@+id/Movebtn"
+        android:layout_below="@+id/Clockwisebtn"
+        android:layout_alignRight="@+id/Clockwisebtn"
+        android:layout_alignEnd="@+id/Clockwisebtn"
+        android:layout_alignLeft="@+id/Clockwisebtn"
+        android:layout_alignStart="@+id/Clockwisebtn"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide"
+        android:onClick="Slide"
+        android:id="@+id/Slidebtn"
+        android:layout_below="@+id/Fadebtn"
+        android:layout_alignStart="@id/Fadebtn"
+        android:layout_alignRight="@id/Fadebtn"
+        android:layout_alignEnd="@id/Fadebtn"
+        android:layout_alignLeft="@id/Fadebtn"
+        />
+
+
+
+</RelativeLayout>
